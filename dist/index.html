@@ -1,15 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link type="stylesheet" href="css/style.css">
+    <title>Test task</title>
 </head>
 <body>
-    <h1 class="title">Some text</h1>
-    <h1 class="title1">Some text!</h1>
+    <main>
+        <div class="wrapper">
+            <section class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#">Личный кабинет</a></li>
+                    <li class="nav__item"><a href="#">Платежи</a></li>
+                    <li class="nav__item"><a href="#">История платежей</a></li>
+                    <li class="nav__item"><a href="#">Настройки</a></li>
+                    <li class="nav__item"><a href="#">Выйти</a></li>
+                </ul>
+            </section>
+            <section class="main">
+                <div class="container">
+                    <div class="main__personal">
+                        <h1>Личный кабинет</h1>
+                    </div>
+                    <div class="main__payment main__payment--active">
+                        <table>
+                            <th>
+                                Информация по оплате:
+                            </th>
+                            <tr>
+                                <td>Номер счета: </td>
+                                <td>Сумма Платежа: </td>
+                            </tr>
+                            <tr>
+                                <td>87123658716587</td>
+                                <td>100 руб.</td>
+                            </tr>
+                        </table>
+                        <h2 class="main__payment-title">Данные банковской карты</h2>
+                        <form action="" method="GET">
+                            <div class="main__card-number">
+                                <label>Номер карты
+                                    <input type="number" name="seria-1" maxlength="4">
+                                    <input type="number" name="seria-2" maxlength="4">
+                                    <input type="number" name="seria-3" maxlength="4">
+                                    <input type="number" name="seria-4" maxlength="4">
+                                </label>
+                            </div>
+                            <div class="main__card-details">
+                                <label class="main__expire-date">
+                                    <select class="main__expire-date main__expire-date--month">
+                                        <option value="04">04</option>
+                                    </select>
+                                    <select class="main__expire-date main__expire-date--year">
+                                        <option value="04">2018</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="main__cvv">
+                                <label for="cvv-code">Код CVV2/CVC2</label>
+                                <input id="cvv-code" name="cvv-code" maxlength="4" type="number">
+                            </div>
+                            <div class="main__card-holder">
+                                <input name="card-holder" placeholder="Держатель карты">
+                            </div>
+                            <input type="submit" value="Оплатить">
+                        </form>
+                    </div>
+                    <div class="main__history">
+                        <h2>История</h2>
+                    </div>
+                    <div class="main__settings">
+                        <h2>Настройки</h2>
+                    </div>
+                    <div class="main_info">
+                        <p>Исходя из астатической системы координат Булгакова, соединение стабильно. 
+                           Краевая часть артезианского бассейна, которая в настоящее время находится 
+                           ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует 
+                           прецессионный годовой параллакс.
+                        </p>
+                        <p>
+                            Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+                        </p>
+                        <p>
+                            Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+                        </p>
+                        <p>
+                            Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. 
+                            Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, 
+                            то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только 
+                            первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических 
+                            пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет 
+                            иначе взглянуть на то, что такое волчок.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <script src="js/bundle.js"></script>
 </body>
 </html>
