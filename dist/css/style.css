@@ -74,9 +74,6 @@ ul {
 
 .nav__item.nav__item--active a::after {
   content: "(активная)"; }
-
-.nav {
-  color: lightcoral; }
 .main {
   width: 638px;
   font-size: 16px;

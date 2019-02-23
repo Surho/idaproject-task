@@ -10504,13 +10504,16 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log((0, _jquery2.default)('.main__item'));
-
 (0, _jquery2.default)('.nav').click(function (evt) {
-    console.log(evt.target);
-    if (evt.target.classList.contains('main__item')) {
-        console.log("1");
-    }
+    var elem = evt.target.parentElement;
+    if (elem.classList.contains('nav__item') && !elem.classList.contains('nav__item--exit')) {
+        (0, _jquery2.default)('.nav__item--active').removeClass('nav__item--active');
+        (0, _jquery2.default)('.main__item--active').removeClass('main__item--active');
+
+        var tab = elem.dataset.tab;
+        elem.classList.add('nav__item--active');
+        (0, _jquery2.default)(tab).addClass('main__item--active');
+    };
 });
 
 /***/ }),

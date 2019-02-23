@@ -1,10 +1,13 @@
 import $ from 'jquery';
 
-console.log($('.main__item'));
-
 $('.nav').click((evt) => {
-    console.log(evt.target);
-    if(evt.target.classList.contains('main__item')) {
-        console.log("1");
-    }
+    let elem = evt.target.parentElement;
+    if(elem.classList.contains('nav__item') && !elem.classList.contains('nav__item--exit')) {
+        $('.nav__item--active').removeClass('nav__item--active');
+        $('.main__item--active').removeClass('main__item--active');
+
+        let tab = elem.dataset.tab;
+        elem.classList.add('nav__item--active');
+        $(tab).addClass('main__item--active');
+    };
 });
