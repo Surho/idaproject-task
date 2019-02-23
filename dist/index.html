@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Test task</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
             <section class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#">Личный кабинет</a></li>
-                    <li class="nav__item"><a href="#">Платежи</a></li>
+                    <li class="nav__item nav__item--active"><a href="#">Платежи</a></li>
                     <li class="nav__item"><a href="#">История платежей</a></li>
                     <li class="nav__item"><a href="#">Настройки</a></li>
                     <li class="nav__item"><a href="#">Выйти</a></li>
@@ -21,58 +21,85 @@
             </section>
             <section class="main">
                 <div class="container">
-                    <div class="main__personal">
-                        <h1>Личный кабинет</h1>
-                    </div>
-                    <div class="main__payment main__payment--active">
-                        <table>
-                            <th>
-                                Информация по оплате:
-                            </th>
-                            <tr>
-                                <td>Номер счета: </td>
-                                <td>Сумма Платежа: </td>
-                            </tr>
-                            <tr>
-                                <td>87123658716587</td>
-                                <td>100 руб.</td>
-                            </tr>
-                        </table>
-                        <h2 class="main__payment-title">Данные банковской карты</h2>
-                        <form action="" method="GET">
-                            <div class="main__card-number">
-                                <label>Номер карты
-                                    <input type="number" name="seria-1" maxlength="4">
-                                    <input type="number" name="seria-2" maxlength="4">
-                                    <input type="number" name="seria-3" maxlength="4">
-                                    <input type="number" name="seria-4" maxlength="4">
-                                </label>
-                            </div>
-                            <div class="main__card-details">
-                                <label class="main__expire-date">
-                                    <select class="main__expire-date main__expire-date--month">
-                                        <option value="04">04</option>
-                                    </select>
-                                    <select class="main__expire-date main__expire-date--year">
-                                        <option value="04">2018</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div class="main__cvv">
-                                <label for="cvv-code">Код CVV2/CVC2</label>
-                                <input id="cvv-code" name="cvv-code" maxlength="4" type="number">
-                            </div>
-                            <div class="main__card-holder">
-                                <input name="card-holder" placeholder="Держатель карты">
-                            </div>
-                            <input type="submit" value="Оплатить">
-                        </form>
-                    </div>
-                    <div class="main__history">
-                        <h2>История</h2>
-                    </div>
-                    <div class="main__settings">
-                        <h2>Настройки</h2>
+                    <div class="main__wrapper">
+                        <div class="main__personal">
+                            <h1>Личный кабинет</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Sunt id deleniti excepturi 
+                                aliquam, pariatur quas nesciunt iure dicta 
+                                architecto rerum velit tenetur atque facilis 
+                                voluptate magni molestiae, consectetur quod quidem.</p>
+                        </div>
+                        <div class="main__payment main__item main__item--active">
+                            <table>
+                                <th>
+                                    Информация по оплате:
+                                </th>
+                                <tr>
+                                    <td>Номер счета: </td>
+                                    <td>Сумма Платежа: </td>
+                                </tr>
+                                <tr>
+                                    <td>87123658716587</td>
+                                    <td>100 руб.</td>
+                                </tr>
+                            </table>
+                            <h2 class="main__payment-title">Данные банковской карты</h2>
+                            <form action="" method="GET">
+                                <div class="main__card-number">
+                                    <label>Номер карты
+                                        <input type="number" name="seria-1" maxlength="4">
+                                        <input type="number" name="seria-2" maxlength="4">
+                                        <input type="number" name="seria-3" maxlength="4">
+                                        <input type="number" name="seria-4" maxlength="4">
+                                    </label>
+                                </div>
+                                <div class="main__card-details">
+                                    <label class="main__expire-date">
+                                        <select class="main__expire-date main__expire-date--month">
+                                            <option value="04">04</option>
+                                        </select>
+                                        <select class="main__expire-date main__expire-date--year">
+                                            <option value="04">2018</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="main__cvv">
+                                    <label for="cvv-code">Код CVV2/CVC2</label>
+                                    <input id="cvv-code" name="cvv-code" maxlength="4" type="number">
+                                </div>
+                                <div class="main__card-holder">
+                                    <input name="card-holder" placeholder="Держатель карты">
+                                </div>
+                                <input type="submit" value="Оплатить">
+                            </form>
+                        </div>
+                        <div class="main__history main__item">
+                            <h2>История</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Sunt id deleniti excepturi 
+                                aliquam, pariatur quas nesciunt iure dicta 
+                                architecto rerum velit tenetur atque facilis 
+                                voluptate magni molestiae, consectetur quod quidem.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Sunt id deleniti excepturi 
+                                aliquam, pariatur quas nesciunt iure dicta 
+                                architecto rerum velit tenetur atque facilis 
+                                voluptate magni molestiae, consectetur quod quidem.</p>
+                        </div>
+                        <div class="main__settings main__item">
+                            <h2>Настройки</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Sunt id deleniti excepturi 
+                                aliquam, pariatur quas nesciunt iure dicta 
+                                architecto rerum velit tenetur atque facilis 
+                                voluptate magni molestiae, consectetur quod quidem.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Sunt id deleniti excepturi 
+                                aliquam, pariatur quas nesciunt iure dicta 
+                                architecto rerum velit tenetur atque facilis 
+                                voluptate magni molestiae, consectetur quod quidem.</p>
+                        </div>
                     </div>
                     <div class="main_info">
                         <p>Исходя из астатической системы координат Булгакова, соединение стабильно. 

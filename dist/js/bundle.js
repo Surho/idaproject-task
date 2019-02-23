@@ -10472,11 +10472,112 @@ return jQuery;
 "use strict";
 
 
+__webpack_require__(/*! ./tabs.js */ "./src/js/tabs.js");
+
+__webpack_require__(/*! ../scss/style.scss */ "./src/scss/style.scss");
+
+__webpack_require__(/*! ../scss/wrapper.scss */ "./src/scss/wrapper.scss");
+
+__webpack_require__(/*! ../scss/container.scss */ "./src/scss/container.scss");
+
+__webpack_require__(/*! ../scss/fonts.scss */ "./src/scss/fonts.scss");
+
+__webpack_require__(/*! ../scss/nav.scss */ "./src/scss/nav.scss");
+
+__webpack_require__(/*! ../scss/main.scss */ "./src/scss/main.scss");
+
+/***/ }),
+
+/***/ "./src/js/tabs.js":
+/*!************************!*\
+  !*** ./src/js/tabs.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _jquery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log((0, _jquery2.default)('.main__item'));
+
+(0, _jquery2.default)('.nav').click(function (evt) {
+    console.log(evt.target);
+    if (evt.target.classList.contains('main__item')) {
+        console.log("1");
+    }
+});
+
+/***/ }),
+
+/***/ "./src/scss/container.scss":
+/*!*********************************!*\
+  !*** ./src/scss/container.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/scss/fonts.scss":
+/*!*****************************!*\
+  !*** ./src/scss/fonts.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/scss/main.scss":
+/*!****************************!*\
+  !*** ./src/scss/main.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/scss/nav.scss":
+/*!***************************!*\
+  !*** ./src/scss/nav.scss ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/scss/style.scss":
+/*!*****************************!*\
+  !*** ./src/scss/style.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/scss/wrapper.scss":
+/*!*******************************!*\
+  !*** ./src/scss/wrapper.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

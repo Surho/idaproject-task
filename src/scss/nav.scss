@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.nav {
+    width: 322px;
+    font-family: "Open-Sans", "Tahoma", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.nav__list {
+    list-style-type: none;
+
+    & a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.nav__item {
+    & a {
+        display: block;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    &:nth-child(odd) {
+        background-color: #1f2229;
+    }
+
+    &:nth-child(even) {
+        background-color: #191c24;
+    }
+
+    &:hover {
+        background-color: #2a2d37;
+    }
+
+    &.nav__item--active a {
+        color: #808592;
+        background-color: #2a2d37;
+    }
+    
+    &.nav__item--active a::after {
+        content:"(активная)";
+    }
+}
+
+.nav {
+    color:lightcoral;
+}
+

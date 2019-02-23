@@ -1,0 +1,13 @@
+.main {
+    width: 638px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.main__wrapper > * {
+    display: none;
+}
+
+.main__wrapper .main__item--active {
+    display: block;
+}

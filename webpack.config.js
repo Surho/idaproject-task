@@ -9,7 +9,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'js/bundle.js'
+    filename: 'js/bundle.js',
   },
   devtool: "source-map",
   module: {
@@ -27,8 +27,35 @@ module.exports = {
         test: /\.scss$/,
         use: extractSASS.extract({ 
           fallback: 'style-loader',
-          use: [ 'css-loader', 'sass-loader' ]
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                url: false
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+                sourceMapContents: false
+              }
+            }
+          ]
         })
+      },
+      { 
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+              publicPath: '../fonts'
+            },
+          },
+        ]
       }
     ]
   },
