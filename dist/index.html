@@ -35,41 +35,43 @@
                                 <th>
                                     Информация по оплате:
                                 </th>
-                                <tr>
+                                <tr class="main__payment-account">
                                     <td>Номер счета: </td>
-                                    <td>Сумма Платежа: </td>
-                                </tr>
-                                <tr>
                                     <td>87123658716587</td>
+                                </tr>
+                                <tr class="main__payment-amount">
+                                    <td>Сумма Платежа: </td>
                                     <td>100 руб.</td>
                                 </tr>
                             </table>
                             <h2 class="main__payment-title">Данные банковской карты</h2>
                             <form action="" method="GET">
                                 <div class="main__card-number">
-                                    <label>Номер карты
-                                        <input type="number" name="seria-1" maxlength="4">
-                                        <input type="number" name="seria-2" maxlength="4">
-                                        <input type="number" name="seria-3" maxlength="4">
-                                        <input type="number" name="seria-4" maxlength="4">
+                                    <label>
+                                        Номер карты<br>
+                                        <input type="text" name="serial-1" maxlength="4">
+                                        <input type="text" name="serial-2" maxlength="4">
+                                        <input type="text" name="serial-3" maxlength="4">
+                                        <input type="text" name="serial-4" maxlength="4">
                                     </label>
-                                </div>
-                                <div class="main__card-details">
-                                    <label class="main__expire-date">
-                                        <select class="main__expire-date main__expire-date--month">
-                                            <option value="04">04</option>
-                                        </select>
-                                        <select class="main__expire-date main__expire-date--year">
-                                            <option value="04">2018</option>
-                                        </select>
-                                    </label>
+                                    <div class="main__card-details">
+                                        <label class="main__expire-date">
+                                            Срок действия<br>
+                                            <select class="main__expire-date main__expire-date--month">
+                                                <option value="04">04</option>
+                                            </select>
+                                            <select class="main__expire-date main__expire-date--year">
+                                                <option value="04">2018</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="main__card-holder">
+                                        <input name="card-holder" placeholder="Держатель карты">
+                                    </div>
                                 </div>
                                 <div class="main__cvv">
                                     <label for="cvv-code">Код CVV2/CVC2</label>
                                     <input id="cvv-code" name="cvv-code" maxlength="4" type="number">
-                                </div>
-                                <div class="main__card-holder">
-                                    <input name="card-holder" placeholder="Держатель карты">
                                 </div>
                                 <input type="submit" value="Оплатить">
                             </form>
@@ -101,27 +103,27 @@
                                 voluptate magni molestiae, consectetur quod quidem.</p>
                         </div>
                     </div>
-                    <div class="main_info">
-                        <p>Исходя из астатической системы координат Булгакова, соединение стабильно. 
-                           Краевая часть артезианского бассейна, которая в настоящее время находится 
-                           ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует 
-                           прецессионный годовой параллакс.
-                        </p>
-                        <p>
-                            Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
-                        </p>
-                        <p>
-                            Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
-                        </p>
-                        <p>
-                            Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. 
-                            Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, 
-                            то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только 
-                            первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических 
-                            пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет 
-                            иначе взглянуть на то, что такое волчок.
-                        </p>
-                    </div>
+                </div>
+                <div class="main__info">
+                    <p>Исходя из астатической системы координат Булгакова, соединение стабильно. 
+                        Краевая часть артезианского бассейна, которая в настоящее время находится 
+                        ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует 
+                        прецессионный годовой параллакс.
+                    </p>
+                    <p>
+                        Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+                    </p>
+                    <p>
+                        Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+                    </p>
+                    <p>
+                        Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. 
+                        Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, 
+                        то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только 
+                        первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических 
+                        пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет 
+                        иначе взглянуть на то, что такое волчок.
+                    </p>
                 </div>
             </section>
         </div>
