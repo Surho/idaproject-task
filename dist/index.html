@@ -55,10 +55,21 @@
                                         <input type="text" name="serial-4" maxlength="4">
                                     </label>
                                     <div class="main__card-details">
-                                        <label class="main__expire-date">
+                                        <label>
                                             Срок действия<br>
                                             <select class="main__expire-date main__expire-date--month">
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="04">03</option>
                                                 <option value="04">04</option>
+                                                <option value="04">05</option>
+                                                <option value="04">06</option>
+                                                <option value="04">07</option>
+                                                <option value="04">08</option>
+                                                <option value="04">09</option>
+                                                <option value="04">10</option>
+                                                <option value="04">11</option>
+                                                <option value="04">12</option>
                                             </select>
                                             <select class="main__expire-date main__expire-date--year">
                                                 <option value="04">2018</option>
@@ -73,7 +84,7 @@
                                     <label for="cvv-code">Код CVV2/CVC2</label>
                                     <input id="cvv-code" name="cvv-code" maxlength="4" type="number">
                                 </div>
-                                <input type="submit" value="Оплатить">
+                                <input class="main__submit btn" type="submit" value="Оплатить">
                             </form>
                         </div>
                         <div class="main__history main__item">

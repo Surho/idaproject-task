@@ -10474,6 +10474,8 @@ return jQuery;
 
 __webpack_require__(/*! ./tabs.js */ "./src/js/tabs.js");
 
+__webpack_require__(/*! ./select.js */ "./src/js/select.js");
+
 __webpack_require__(/*! ../scss/style.scss */ "./src/scss/style.scss");
 
 __webpack_require__(/*! ../scss/wrapper.scss */ "./src/scss/wrapper.scss");
@@ -10485,6 +10487,20 @@ __webpack_require__(/*! ../scss/fonts.scss */ "./src/scss/fonts.scss");
 __webpack_require__(/*! ../scss/nav.scss */ "./src/scss/nav.scss");
 
 __webpack_require__(/*! ../scss/main.scss */ "./src/scss/main.scss");
+
+__webpack_require__(/*! ../scss/btn.scss */ "./src/scss/btn.scss");
+
+/***/ }),
+
+/***/ "./src/js/select.js":
+/*!**************************!*\
+  !*** ./src/js/select.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 /***/ }),
 
@@ -10504,17 +10520,32 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery2.default)('.nav').click(function (evt) {
-    var elem = evt.target.parentElement;
-    if (elem.classList.contains('nav__item') && !elem.classList.contains('nav__item--exit')) {
-        (0, _jquery2.default)('.nav__item--active').removeClass('nav__item--active');
-        (0, _jquery2.default)('.main__item--active').removeClass('main__item--active');
+window.jQuery = window.$ = _jquery2.default;
 
-        var tab = elem.dataset.tab;
-        elem.classList.add('nav__item--active');
-        (0, _jquery2.default)(tab).addClass('main__item--active');
-    };
+(0, _jquery2.default)(document).ready(function () {
+    (0, _jquery2.default)('.nav').click(function (evt) {
+        var elem = evt.target.parentElement;
+        if (elem.classList.contains('nav__item') && !elem.classList.contains('nav__item--exit')) {
+            (0, _jquery2.default)('.nav__item--active').removeClass('nav__item--active');
+            (0, _jquery2.default)('.main__item--active').removeClass('main__item--active');
+
+            var tab = elem.dataset.tab;
+            elem.classList.add('nav__item--active');
+            (0, _jquery2.default)(tab).addClass('main__item--active');
+        };
+    });
 });
+
+/***/ }),
+
+/***/ "./src/scss/btn.scss":
+/*!***************************!*\
+  !*** ./src/scss/btn.scss ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
