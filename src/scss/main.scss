@@ -3,10 +3,21 @@
     font-size: 16px;
     background-color: #f7f8f8;
 
-    & input {
+    & input,
+    & select {
+        cursor: pointer;
         border: 1px solid #e4e9ee;
     }
 }
+
+// input:not([type="submit"]) {
+//     border-color: #e4e9ee;
+// }
+
+// input:not([type="submit"]):hover {
+//     border-color: #c2c7cc;
+// }
+
 
 .main__wrapper > * {
     display: none;
@@ -76,6 +87,7 @@
 }
 
 .main__card-number {
+    position: relative;
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
@@ -84,6 +96,9 @@
     margin-bottom: 45px;
     border: 1px solid #e5eaef;
     border-radius: 10px;
+    background-color: #f7f8f8;
+    box-shadow: -30px -30px 20px -30px rgba(0,0,0,0.2);
+    z-index: 2;
 
     & input[name^="serial"] {
         box-sizing: border-box;
@@ -91,7 +106,6 @@
         padding: 10px 13px;
         margin-top: 7px;
         margin-right: 10px;
-        margin-bottom: 18px;
         font-size: 16px;
         font-weight: 400;
         line-height: 21px;
@@ -101,6 +115,34 @@
             margin-right: 0;
         }
     }
+}
+
+.main__card-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.main__card-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 370px;
+    height: 235px;
+    left: 200px;
+    top: 50px;
+    border: 1px solid #e5eaef;
+    border-radius: 10px;
+}
+
+.main__card-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 370px;
+    height: 42px;
+    left: 201px;
+    top: 75px;
+    background-color: #e4e9ee;
 }
 
 .main__card-holder {
@@ -116,13 +158,28 @@
 }
 
 .main__cvv {
+    position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-top: 100px;
+    margin-top: 130px;
     margin-left: 50px;
-
+    z-index: 2;
+    
     & > * {
         display: block;
+    }
+
+    & > input {
+        box-sizing: border-box;
+        width: 138px;
+        height: 40px;
+        padding-left: 20px;
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #8494ab;
+        background: url('../img/tooltip.png') no-repeat 92% 5px;
     }
 }
 
@@ -136,6 +193,7 @@
     display: inline-block;
     vertical-align: top;
     font-size: 0; 
+    z-index: 1;
 }
 
 .main__select-wrapper::before {
@@ -170,6 +228,9 @@
 }
 
 .main__expire-date {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-overflow: '';
     position: relative;
     margin: 0;
     width: 70px;
@@ -181,6 +242,8 @@
     border-color: #e4e9ee;
     color: #000000;
     outline: none;
+    background: #fff url('../img/arrow_down.png') no-repeat;
+    background-position: 93% 15px;
 }
 
 .main__expire-date--year {

@@ -21,8 +21,8 @@
     & a {
         display: block;
         padding-left: 30px;
-        padding-top: 30px;
-        padding-bottom: 40px;
+        padding-top: 24px;
+        padding-bottom: 28px;
     }
 
     &:nth-child(odd) {
@@ -43,7 +43,7 @@
     }
     
     &.nav__item--active a::after {
-        content:"(активная)";
+        content:" (активная)";
     }
 }
 

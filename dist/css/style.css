@@ -26,7 +26,8 @@ ul {
     display: inline-block;
     vertical-align: top; }
 .container {
-  padding: 45px 30px; }
+  min-height: 600px;
+  padding: 42px 27px; }
 @font-face {
   font-family: "Open-Sans";
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
@@ -57,8 +58,8 @@ ul {
 .nav__item a {
   display: block;
   padding-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 40px; }
+  padding-top: 24px;
+  padding-bottom: 28px; }
 
 .nav__item:nth-child(odd) {
   background-color: #1f2229; }
@@ -74,12 +75,14 @@ ul {
   background-color: #2a2d37; }
 
 .nav__item.nav__item--active a::after {
-  content: "(активная)"; }
+  content: " (активная)"; }
 .main {
   width: 638px;
   font-size: 16px;
   background-color: #f7f8f8; }
-  .main input {
+  .main input,
+  .main select {
+    cursor: pointer;
     border: 1px solid #e4e9ee; }
 
 .main__wrapper > * {
@@ -138,6 +141,7 @@ ul {
   line-height: 24px; }
 
 .main__card-number {
+  position: relative;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -145,20 +149,47 @@ ul {
   padding: 23px 15px;
   margin-bottom: 45px;
   border: 1px solid #e5eaef;
-  border-radius: 10px; }
+  border-radius: 10px;
+  background-color: #f7f8f8;
+  box-shadow: -30px -30px 20px -30px rgba(0, 0, 0, 0.2);
+  z-index: 2; }
   .main__card-number input[name^="serial"] {
     box-sizing: border-box;
     width: 68px;
     padding: 10px 13px;
     margin-top: 7px;
     margin-right: 10px;
-    margin-bottom: 18px;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
     color: #8494ab; }
     .main__card-number input[name^="serial"]:last-of-type {
       margin-right: 0; }
+
+.main__card-wrapper {
+  position: relative;
+  display: inline-block; }
+
+.main__card-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 370px;
+  height: 235px;
+  left: 200px;
+  top: 50px;
+  border: 1px solid #e5eaef;
+  border-radius: 10px; }
+
+.main__card-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 370px;
+  height: 42px;
+  left: 201px;
+  top: 75px;
+  background-color: #e4e9ee; }
 
 .main__card-holder {
   margin-top: 10px; }
@@ -171,12 +202,25 @@ ul {
   color: #8494ab; }
 
 .main__cvv {
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  margin-top: 100px;
-  margin-left: 50px; }
+  margin-top: 130px;
+  margin-left: 50px;
+  z-index: 2; }
   .main__cvv > * {
     display: block; }
+  .main__cvv > input {
+    box-sizing: border-box;
+    width: 138px;
+    height: 40px;
+    padding-left: 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #8494ab;
+    background: url("../img/tooltip.png") no-repeat 92% 5px; }
 
 .main-submit {
   display: block; }
@@ -186,7 +230,8 @@ ul {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  font-size: 0; }
+  font-size: 0;
+  z-index: 1; }
 
 .main__select-wrapper::before {
   content: "";
@@ -218,6 +263,9 @@ ul {
   border-bottom: 1px solid #e4e9ee; }
 
 .main__expire-date {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: '';
   position: relative;
   margin: 0;
   width: 70px;
@@ -228,7 +276,9 @@ ul {
   line-height: 21px;
   border-color: #e4e9ee;
   color: #000000;
-  outline: none; }
+  outline: none;
+  background: #fff url("../img/arrow_down.png") no-repeat;
+  background-position: 93% 15px; }
 
 .main__expire-date--year {
   width: 85px; }
