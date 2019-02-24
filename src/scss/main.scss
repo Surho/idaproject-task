@@ -24,14 +24,14 @@
 }
 
 .main__item {
-    margin-bottom: 45px;
+    margin-bottom: 42px;
 }
 
 .main__info {
-    padding-top: 45px;
-    padding-bottom: 40px;
+    padding-top: 22px;
+    padding-bottom: 32px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 42px;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -40,7 +40,8 @@
     background-color: #373c43;
 
     & p {
-        margin-bottom: 15px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
     & p:last-child {
@@ -61,6 +62,7 @@
 }
 
 .main__card-title {
+    margin-top: 11px;
     margin-bottom: 5px;
     font-size: 16px;
     font-weight: 400;
@@ -70,16 +72,36 @@
 }
 
 .main__payment-account td:first-child,
-.main__payment-amount td:first-child,
-.main__payment th {
+.main__payment-amount td:first-child  {
     font-size: 16px;
     font-weight: 400;
-    line-height: 29px;
     font-family: 'Arial', sans-serif;
     color: #8494ab;
 }
 
+.main__info-title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    color: #8494ab;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.main__payment td {
+    line-height: 25px;
+}
+
+.main__payment td:first-child {
+    padding-right: 37px;
+}
+
 .main__payment-title {
+    margin-top: 27px;
     font-family: "Open-Sans", "Tahoma", sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -91,9 +113,10 @@
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    width: 348px;
-    padding: 23px 15px;
-    margin-bottom: 45px;
+    width: 352px;
+    padding: 24px 15px;
+    padding-bottom: 14px;
+    margin-bottom: 38px;
     border: 1px solid #e5eaef;
     border-radius: 10px;
     background-color: #f7f8f8;
@@ -101,11 +124,12 @@
     z-index: 2;
 
     & input[name^="serial"] {
+        display: inline-block;
         box-sizing: border-box;
-        width: 68px;
-        padding: 10px 13px;
+        width: 65px;
+        padding: 9px 12px;
         margin-top: 7px;
-        margin-right: 10px;
+        margin-right: 5px;
         font-size: 16px;
         font-weight: 400;
         line-height: 21px;
@@ -126,10 +150,10 @@
     content: "";
     display: block;
     position: absolute;
-    width: 370px;
+    width: 366px;
     height: 235px;
     left: 200px;
-    top: 50px;
+    top: 27px;
     border: 1px solid #e5eaef;
     border-radius: 10px;
 }
@@ -138,19 +162,21 @@
     content: "";
     display: block;
     position: absolute;
-    width: 370px;
+    width: 366px;
     height: 42px;
     left: 201px;
-    top: 75px;
+    top: 52px;
     background-color: #e4e9ee;
 }
 
 .main__card-holder {
-    margin-top: 10px;
+    margin-top: 13px;
 }
 
 .main__card-holder input {
-    padding: 12px 12px; 
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 12px; 
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -161,8 +187,8 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-top: 130px;
-    margin-left: 50px;
+    margin-top: 108px;
+    margin-left: 56px;
     z-index: 2;
     
     & > * {
@@ -183,8 +209,9 @@
     }
 }
 
-.main-submit {
+.main__submit {
     display: block;
+    margin-left: 14px;
 }
 
 .main__select-wrapper {
@@ -250,10 +277,14 @@
 }
 
 .main__select-wrapper--year {
-    width: 80px;
+    width: 84px;
 
     & > .main__expire-date {
         width: 100px;
         background-position: 70% 15px;
     }
+}
+
+.main__select-wrapper--month {
+    margin-right: 7px;
 }
