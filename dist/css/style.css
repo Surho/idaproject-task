@@ -114,6 +114,14 @@ ul {
   font-family: 'Arial', sans-serif;
   color: #8494ab; }
 
+.main__card-title {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: 'Arial', sans-serif;
+  color: #8494ab; }
+
 .main__payment-account td:first-child,
 .main__payment-amount td:first-child,
 .main__payment th {
@@ -152,9 +160,8 @@ ul {
     .main__card-number input[name^="serial"]:last-of-type {
       margin-right: 0; }
 
-.main__expire-date {
-  margin-top: 7px;
-  margin-bottom: 10px; }
+.main__card-holder {
+  margin-top: 10px; }
 
 .main__card-holder input {
   padding: 12px 12px;
@@ -167,23 +174,64 @@ ul {
   display: inline-block;
   vertical-align: top;
   margin-top: 100px;
-  margin-left: 58px; }
+  margin-left: 50px; }
   .main__cvv > * {
     display: block; }
 
 .main-submit {
   display: block; }
 
+.main__select-wrapper {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0; }
+
+.main__select-wrapper::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 40px;
+  background-color: #fff;
+  border-top: 1px solid #e4e9ee;
+  border-left: 1px solid #e4e9ee;
+  border-bottom: 1px solid #e4e9ee; }
+
+.main__select-wrapper::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 40px;
+  background-color: #fff;
+  border-top: 1px solid #e4e9ee;
+  border-right: 1px solid #e4e9ee;
+  border-left: none;
+  border-bottom: 1px solid #e4e9ee; }
+
 .main__expire-date {
+  position: relative;
+  margin: 0;
   width: 70px;
   height: 40px;
-  text-indent: 10px;
-  box-sizing: content-box;
-  padding: 5px;
+  text-indent: 15px;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-  color: #000000; }
+  border-color: #e4e9ee;
+  color: #000000;
+  outline: none; }
+
+.main__expire-date--year {
+  width: 85px; }
 .btn {
   padding: 12px 31px;
   font-family: "Open-Sans", "Tahoma", sans-serif;
