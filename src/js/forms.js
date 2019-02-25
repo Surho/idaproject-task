@@ -1,6 +1,8 @@
 let language = {
     errorTitle: 'Проверьте корректность полей', 
-    requiredFields: 'Заполните обьязательные поля'
+    requiredFields: 'Заполните обьязательные поля',
+    lengthTooShortStart: 'Поле должно содержать минимум ',
+    lengthBadEnd: ' символа'
 }
 
 $.validate({

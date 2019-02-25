@@ -10586,7 +10586,9 @@ return jQuery;
 
 var language = {
     errorTitle: 'Проверьте корректность полей',
-    requiredFields: 'Заполните обьязательные поля'
+    requiredFields: 'Заполните обьязательные поля',
+    lengthTooShortStart: 'Поле должно содержать минимум ',
+    lengthBadEnd: ' символа'
 };
 
 $.validate({
@@ -10653,6 +10655,8 @@ __webpack_require__(/*! ../scss/nav.scss */ "./src/scss/nav.scss");
 __webpack_require__(/*! ../scss/main.scss */ "./src/scss/main.scss");
 
 __webpack_require__(/*! ../scss/btn.scss */ "./src/scss/btn.scss");
+
+__webpack_require__(/*! ../scss/form-error.scss */ "./src/scss/form-error.scss");
 
 /***/ }),
 
@@ -11238,6 +11242,17 @@ window.jQuery = window.$ = _jquery2.default;
 /*!*****************************!*\
   !*** ./src/scss/fonts.scss ***!
   \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/scss/form-error.scss":
+/*!**********************************!*\
+  !*** ./src/scss/form-error.scss ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

@@ -50,10 +50,10 @@
                                     <div class="main__card-number">
                                         <label>
                                             Номер карты<br>
-                                            <input type="text" name="serial-1" maxlength="4" data-validation="required length" data-validation-length="min4">
-                                            <input type="text" name="serial-2" maxlength="4" data-validation="required length" data-validation-length="min4">
-                                            <input type="text" name="serial-3" maxlength="4" data-validation="required length" data-validation-length="min4">
-                                            <input type="text" name="serial-4" maxlength="4" data-validation="required length" data-validation-length="min4">
+                                            <input type="text" name="serial-1" maxlength="4" data-validation="required length" data-validation-length="min4" data-validation-error-msg="Некорректный номер карты (должен содержать 4 цифры в каждом поле)">
+                                            <input type="text" name="serial-2" maxlength="4" data-validation="required length" data-validation-length="min4" data-validation-error-msg="Некорректный номер карты (должен содержать 4 цифры в каждом поле)">
+                                            <input type="text" name="serial-3" maxlength="4" data-validation="required length" data-validation-length="min4" data-validation-error-msg="Некорректный номер карты (должен содержать 4 цифры в каждом поле)">
+                                            <input type="text" name="serial-4" maxlength="4" data-validation="required length" data-validation-length="min4" data-validation-error-msg="Некорректный номер карты (должен содержать 4 цифры в каждом поле)">
                                         </label>
                                         <div class="main__card-details">
                                             <p class="main__card-title">Срок действия</p>
@@ -85,14 +85,14 @@
                                                 </select>
                                             </div>
                                             <div class="main__card-holder">
-                                                <input name="card-holder" placeholder="Держатель карты" data-validation="required length" data-validation-regexp="^[a-zA-Z]+$" data-validation-length="min4">
+                                                <input name="card-holder" placeholder="Держатель карты" data-validation="required length" data-validation-regexp="^[a-zA-Z]+$" data-validation-length="min4" data-validation-error-msg="Некорректный держатель карты (должен содержать минимум 4 латинских буквы)">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="main__cvv">
                                     <label for="cvv-code">Код CVV2 / CVC2</label>
-                                    <input id="cvv-code" name="cvv-code" maxlength="3" type="text" data-validation="required length" data-validation-length="min3">
+                                    <input id="cvv-code" name="cvv-code" maxlength="3" type="text" data-validation="required length" data-validation-length="min3" data-validation-error-msg="Некорректный CVV код (должен содержать 3 цифры)">
                                 </div>
                                 <input class="main__submit btn" type="submit" value="Оплатить">
                             </form>

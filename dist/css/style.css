@@ -15,11 +15,6 @@ main {
 ul {
   margin: 0;
   padding: 0; }
-
-.form-error ul {
-  padding-left: 25px;
-  margin-bottom: 30px;
-  color: red; }
 .wrapper {
   box-sizing: border-box;
   width: 1000px;
@@ -497,6 +492,14 @@ table {
   color: #fff;
   background-color: #0058ba;
   border-radius: 50px; }
+.form-error ul {
+  padding-left: 25px;
+  margin-bottom: 30px;
+  color: red; }
+
+@media (max-width: 520px) {
+  .form-error {
+    font-size: 14px; } }
 function webpackEmptyContext(req) {
 	var e = new Error("Cannot find module '" + req + "'");
 	e.code = 'MODULE_NOT_FOUND';

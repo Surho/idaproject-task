@@ -1,0 +1,11 @@
+.form-error ul {
+    padding-left: 25px;
+    margin-bottom: 30px;
+    color: red;
+}
+
+@media(max-width: 520px) {
+    .form-error {
+        font-size: 14px;
+    }
+}
