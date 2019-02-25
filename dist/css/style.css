@@ -1,20 +1,3 @@
-html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #000; }
-
-body {
-  font-family: "Open-Sans", "Tahoma", sans-serif;
-  min-width: 320px; }
-
-main {
-  margin: 0;
-  padding: 0; }
-
-ul {
-  margin: 0;
-  padding: 0; }
 .wrapper {
   box-sizing: border-box;
   width: 1000px;
@@ -38,6 +21,23 @@ ul {
   .wrapper {
     width: 320px;
     padding: 0; } }
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000; }
+
+body {
+  font-family: "Open-Sans", "Tahoma", sans-serif;
+  min-width: 320px; }
+
+main {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
 .container {
   box-sizing: border-box;
   min-height: 523px;

@@ -8,7 +8,7 @@ $(document).ready(function() {
             $('.nav__item--active').removeClass('nav__item--active');
             $('.main__item--active').removeClass('main__item--active');
 
-            let tab = elem.dataset.tab;
+            let tab = $(elem).data('tab');
             elem.classList.add('nav__item--active');
             $(tab).addClass('main__item--active');
         };
