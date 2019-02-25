@@ -12,3 +12,21 @@
     }
 }
 
+@media(max-width: 1000px) {
+    .wrapper {
+        width: 720px;
+    }
+}
+
+@media(max-width: 720px) {
+    .wrapper {
+        width: 520px;
+    }
+}
+
+@media(max-width: 520px) {
+    .wrapper {
+        width: 320px;
+        padding: 0;
+    }
+}

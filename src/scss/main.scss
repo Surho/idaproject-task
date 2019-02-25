@@ -288,3 +288,129 @@ table {
 .main__select-wrapper--month {
     margin-right: 7px;
 }
+
+@media(max-width: 1000px) {
+    .main {
+        width: 420px;
+    }
+
+    .main__cvv {
+        margin-top: 106px;
+        margin-left: -160px;
+    }
+
+    .main__card-wrapper::after,
+    .main__card-wrapper::before {
+        display: none;
+    }
+}
+
+@media(max-width: 720px) {
+    .main {
+        width: 100%;
+    }
+
+    .main__card-wrapper::before {
+        display: block;
+        left:61px;
+    }
+
+    .main__card-wrapper::after {
+        display: block;
+        left:60px;
+    }
+}
+
+@media(max-width: 520px) {
+
+    .main__card-wrapper::after,
+    .main__card-wrapper::before {
+        display: none;
+    }
+
+    .main__card-wrapper {
+        width: 260px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .main__item {
+        margin-bottom: 10px;
+    }
+
+    .main__info-title {
+        font-size: 16px;
+    }
+
+    .main__payment-account td:first-child, 
+    .main__payment-amount td:first-child {
+        font-size: 13px;
+    }
+
+    .main__payment td {
+        font-size: 13px;
+    }
+
+    .main__payment-title {
+        font-size: 16px;
+    }
+
+    .main__payment label,
+    .main__card-title,
+    .main__card-holder input {
+        font-size: 14px;
+    }
+
+    .main__card-number {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 24px 5px;
+        box-shadow: none;
+    }
+
+    .main__card-number input[name^="serial"] {
+        width: 50px;
+        padding: 4px 5px;
+        margin-right: 2px;
+        font-size: 14px;
+    }
+
+    .main__expire-date {
+        padding-left: 5px;
+        font-size: 14px;
+    }
+
+    .main__select-wrapper--month {
+        width: 45px;
+        margin-right: 0px;
+    }
+
+    .main__select-wrapper--year {
+        width:65px;
+    }
+
+    .main__select-wrapper--month > .main__expire-date {
+        background-position: 35% 15px;
+    }
+
+    .main__select-wrapper--year > .main__expire-date {
+        background-position: 50% 15px;
+    }
+
+    .main__cvv {
+        margin-left: -130px;
+        margin-top: 97px;
+    }
+
+    .main__cvv > input {
+        width: 80px;
+        padding-left: 10px;
+        font-size: 14px;
+        background: #fff url("../img/tooltip.png") no-repeat 92% 9px;
+        background-size: 20px 20px;
+    }
+
+    .main__submit {
+        margin: 0 auto;
+    }
+}

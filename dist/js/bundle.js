@@ -10474,7 +10474,7 @@ return jQuery;
 
 __webpack_require__(/*! ./tabs.js */ "./src/js/tabs.js");
 
-__webpack_require__(/*! ./select.js */ "./src/js/select.js");
+__webpack_require__(/*! ./nav.js */ "./src/js/nav.js");
 
 __webpack_require__(/*! ../scss/style.scss */ "./src/scss/style.scss");
 
@@ -10492,15 +10492,19 @@ __webpack_require__(/*! ../scss/btn.scss */ "./src/scss/btn.scss");
 
 /***/ }),
 
-/***/ "./src/js/select.js":
-/*!**************************!*\
-  !*** ./src/js/select.js ***!
-  \**************************/
+/***/ "./src/js/nav.js":
+/*!***********************!*\
+  !*** ./src/js/nav.js ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
+
+$('.nav__switch').click(function () {
+    $('.nav').toggleClass('nav--opened');
+});
 
 /***/ }),
 

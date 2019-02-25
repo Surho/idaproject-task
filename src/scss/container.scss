@@ -4,3 +4,10 @@
     padding: 45px 27px;
     padding-bottom: 0;
 }
+
+@media(max-width: 520px) {
+    .container {
+      min-height: 450px;
+      padding: 30px 15px;  
+    }  
+}

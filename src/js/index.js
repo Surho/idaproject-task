@@ -1,6 +1,6 @@
 //--------- js --------- //
 import './tabs.js';
-import './select.js';
+import './nav.js';
 
 //-------- style -------- //
 import '../scss/style.scss';
