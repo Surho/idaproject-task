@@ -1,6 +1,8 @@
 //--------- js --------- //
 import './tabs.js';
-import './nav.js';
+import './nav.js'; 
+import './jquery.form-validator.min.js';
+import './forms.js';
 
 //-------- style -------- //
 import '../scss/style.scss';

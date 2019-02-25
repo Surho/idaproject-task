@@ -15,6 +15,11 @@ main {
 ul {
   margin: 0;
   padding: 0; }
+
+.form-error ul {
+  padding-left: 25px;
+  margin-bottom: 30px;
+  color: red; }
 .wrapper {
   box-sizing: border-box;
   width: 1000px;
@@ -492,5 +497,13 @@ table {
   color: #fff;
   background-color: #0058ba;
   border-radius: 50px; }
-
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = "./src/js sync recursive";
 /*# sourceMappingURL=style.css.map*/
