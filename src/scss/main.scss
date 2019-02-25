@@ -1,23 +1,18 @@
 .main {
     width: 638px;
-    font-size: 16px;
+    font-size: 13px;
     background-color: #f7f8f8;
 
     & input,
     & select {
         cursor: pointer;
         border: 1px solid #e4e9ee;
+
+        &:hover {
+            border-color: #acb2b8;
+        }
     }
 }
-
-// input:not([type="submit"]) {
-//     border-color: #e4e9ee;
-// }
-
-// input:not([type="submit"]):hover {
-//     border-color: #c2c7cc;
-// }
-
 
 .main__wrapper > * {
     display: none;
@@ -139,6 +134,22 @@ table {
             margin-right: 0;
         }
     }
+
+    & fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    & legend {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        font-family: 'Arial', sans-serif;
+        color: #8494ab;
+    }
 }
 
 .main__card-wrapper {
@@ -240,6 +251,12 @@ table {
     border-bottom: 1px solid #e4e9ee;
 }
 
+.main__select-wrapper:hover::before {
+    border-top: 1px solid #acb2b8;
+    border-left: 1px solid #acb2b8;
+    border-bottom: 1px solid #acb2b8;
+}
+
 .main__select-wrapper::after {
     content:"";
     box-sizing: border-box;
@@ -255,6 +272,13 @@ table {
     border-left: none;
     border-bottom: 1px solid #e4e9ee;
 }
+
+.main__select-wrapper:hover::after {
+    border-top: 1px solid #acb2b8;
+    border-right: 1px solid #acb2b8;
+    border-left: none;
+    border-bottom: 1px solid #acb2b8;
+} 
 
 .main__expire-date {
     -webkit-appearance: none;

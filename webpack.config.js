@@ -14,6 +14,7 @@ module.exports = {
   },
   devtool: "source-map",
   module: {
+    exprContextCritical: false,
     rules: [{
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),
